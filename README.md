@@ -23,3 +23,11 @@ struct Vault {
     uint256 amount; // Stored ETH balance in wei
     uint256 time;   // Unlock timestamp (Linux epoch seconds)
 }
+
+## 🪙 Day 2 & 3: ERC-20 Custom Token & Token Sale Integration
+
+### Features Added
+- Created custom `MyToken` contract inheriting OpenZeppelin `ERC20`.
+- Integrated `IERC20` token transfers directly inside `CrowdSale.register()`.
+- Added automatic rate calculation (`1 ETH = 1,000 DEVT`).
+- Comprehensive unit testing in `test/CrowdSale.t.sol` covering token math, vault balances, and parameterized custom errors (`abi.encodeWithSelector`).
