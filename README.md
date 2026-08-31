@@ -14,15 +14,6 @@ Built and tested using **Foundry**.
 * **Gas-Optimized Custom Errors:** Uses custom error selectors instead of string revert statements (`require`), reducing deployment and execution gas costs.
 * **Comprehensive Test Suite:** Unit tested using Foundry cheatcodes (`vm.prank`, `vm.warp`, `vm.deal`, `vm.expectRevert`).
 
----
-
-## 📐 Smart Contract Architecture
-
-```solidity
-struct Vault {
-    uint256 amount; // Stored ETH balance in wei
-    uint256 time;   // Unlock timestamp (Linux epoch seconds)
-}
 
 ## 🪙 Day 2 & 3: ERC-20 Custom Token & Token Sale Integration
 
